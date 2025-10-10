@@ -1,10 +1,10 @@
+import imgAtlanta from "@/images/general/atlanta.png";
+import imgBuilding from "@/images/general/building.png";
+import imgCollaboration from "@/images/general/collaboration.png";
+import imgTechTower from "@/images/general/tech-tower.png";
 import { parseTextWithLinks } from "@/lib/utils";
 import { Code, FlaskRound, GraduationCap } from "lucide-react";
 import React from "react";
-import imgAtlanta from "/images/atlanta.png";
-import imgBuilding from "/images/building.png";
-import imgCollaboration from "/images/collaboration.png";
-import imgTechTower from "/images/tech-tower.png";
 
 export default function AboutSection() {
   return (
@@ -53,28 +53,28 @@ export default function AboutSection() {
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-lg shadow-lg h-48 w-full overflow-hidden">
               <img
-                src={imgBuilding}
+                src={imgBuilding.src}
                 alt="Georgia Tech College of Computing"
                 className="object-cover h-full w-full"
               />
             </div>
             <div className="rounded-lg shadow-lg h-48 w-full overflow-hidden mt-8">
               <img
-                src={imgCollaboration}
+                src={imgCollaboration.src}
                 alt="Software engineering collaboration"
                 className="object-cover h-full w-full"
               />
             </div>
             <div className="rounded-lg shadow-lg h-48 w-full overflow-hidden">
               <img
-                src={imgTechTower}
+                src={imgTechTower.src}
                 alt="Georgia Tech Tower with blossoms"
                 className="object-cover h-full w-full"
               />
             </div>
             <div className="rounded-lg shadow-lg h-48 w-full overflow-hidden mt-8">
               <img
-                src={imgAtlanta}
+                src={imgAtlanta.src}
                 alt="Atlanta tech skyline"
                 className="object-cover h-full w-full"
               />

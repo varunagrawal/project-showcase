@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { type Project } from "@/schema";
-import { Link } from "wouter";
+import { type Project } from "@/lib/schema";
 import ProjectCard from "./project-card";
 
 interface ProjectGridProps {
@@ -41,9 +40,9 @@ export default function ProjectGrid({
             className="bg-[var(--gt-navy)] hover:bg-[var(--gt-gold)] text-white"
             size="lg"
             asChild>
-            <Link href={viewAllLink}>
+            <a href={viewAllLink}>
               View All Projects <i className="fas fa-arrow-right ml-2"></i>
-            </Link>
+            </a>
           </Button>
         </div>
       )}
